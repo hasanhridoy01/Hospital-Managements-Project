@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Design Project</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+		<link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+		<style>
+		.owl-carousel .owl-nav .owl-prev span{
+		height: 30px;
+		width: 30px;
+		border: 1px solid #ddd;
+		position: absolute;
+		top: -40px;
+		right: 41px;
+		font-size: 21px;
+		}
+		.owl-carousel .owl-nav .owl-next span{
+		height: 30px;
+		width: 30px;
+		border: 1px solid #ddd;
+		position: absolute;
+		top: -40px;
+		right: 0px;
+		font-size: 21px;
+		}
+		</style>
+	</head>
+	<body>
+		<!-- Modal-strat -->
+		<div id="modal-show" class="modal fade" id="Mymodal">
+			<div class="modal-dialog modal-lg">
+				<div  class="modal-content">
+					<div class="modal-header" style="color: blue; margin-left: 220px; font-size: 30px; font-family: sans-serif;">Make An Appointments<a href="" data-dismiss="modal">X</a></div>
+					<div class="modal-body">
+						<form action="" method="">
+							<div class="row">
+								<div class="col">
+									<div class="form-group">
+										<input type="text" id="Pick data" class="form-control" placeholder="Pick data" >
+									</div>
+								</div>
+								<div class="col">
+									<div class="form-group">
+										<input type="text" id="Suitable time" class="form-control" placeholder="Suitable time">
+									</div>
+								</div>
+							</div>
+						</form>
+						<form action="" method="">
+							<div class="row">
+								<div class="col">
+									<div class="form-group">
+										<input type="text" id="Select Departments" class="form-control" placeholder="Select Departments" >
+									</div>
+								</div>
+								<div class="col">
+									<div class="form-group">
+										<input type="text" id="Doctros" class="form-control" placeholder="Doctros" >
+									</div>
+								</div>
+							</div>
+						</form>
+						<form action="" method="">
+							<div class="row">
+								<div class="col">
+									<div class="form-group">
+										<input type="text" id="Name" class="form-control" placeholder="Name" >
+									</div>
+								</div>
+								<div class="col">
+									<div class="form-group">
+										<input type="text" id="Phone No" class="form-control" placeholder="Phone No" >
+									</div>
+								</div>
+							</div>
+						</form>
+						<form action="" method="">
+							<div class="row">
+								<div class="form-group col-sm-12">
+									<input type="text" id="Email" placeholder="Email" class="form-control">
+								</div>
+							</div>
+							<a href="#" class="btn btn-outline-primary btn-block">Confirm</a>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  menu-strat -->
+		<!-- :::::::::::::::::menu-Strat:::::::::::: -->
+		<div class="menu">
+			<div class="row">
+				<div class="col-lg-12">
+					<nav class="navbar navbar-expand-sm">
+						<div class="logo">
+							<img src="img/logo.png" alt="">
+						</div>
+						<button class="btn btn-outline-primary navbar-toggler" data-target="#mymenu" data-toggle="collapse">
+						<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="mymenu">
+							<ul class="nav navbar" class="navbar">
+								<li><a href="index.html" class="nav-link">Home</a></li>
+								<li><a href="department.html" class="nav-link">Department</a></li>
+								<li class="dropdown"><a href="blog.html" data-target="#mydropdown" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
+								<ul class="dropdown-menu" aria-labelledby="mydropdown">
+									<li><a href="blog.html" class="nav-link">Blog</a></li>
+									<li><a href="single.html" class="nav-link">Single-Blog</a></li>
+								</ul>
+							</li>
+							<li class="dropdown"><a href="page.html" data-target="mrdropdown" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+							<ul class="dropdown-menu" aria-labelledby="mrdropdown">
+								<li><a href="element.html" class="nav-link">Elemants</a></li>
+								<li><a href="about.html" class="nav-link">About</a></li>
+							</ul>
+						</li>
+						<li><a href="doctor.html" class="nav-link">Doctor</a></li>
+						<li><a href="contect.html" class="nav-link">Contect Us</a></li>
+					</ul>
+				</div>
+				<a id="modal-btn" href="#" class="btn btn-outline-primary" class="btn">Make an Appointment</a>
+			</nav>
+		</div>
+	</div>
+</div>
+<!-- :::::::::::::::::menu-End:::::::::::: -->
+<!-- :::::::::::slider-strat:::::::::::::: -->
+<section id="slider">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="carousel slide" data-ride="carousel" setintercal="1000">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="img/banner2.png" alt="" class="img">
+						<div class="carousel-caption">
+							<div class="likha">
+								<h1>Health Care</h1>
+								<h2>For Hole Family</h2>
+								<p style="margin-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+								<p style="margin-bottom: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+								<a href="" class="btn btn-outline-primary">Check Our Service</a>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="img/banner.png" alt="" class="img">
+						<div class="carousel-caption">
+							<div class="likha">
+								<h1>Health Care</h1>
+								<h2>For Hole Family</h2>
+								<p style="margin-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+								<p style="margin-bottom: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+								<a href="" class="btn btn-outline-primary">Check Our Service</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- :::::::::::slider-end:::::::::::::: -->
+<!-- :::::::::::::content-strat::::::::: -->
+<section id="content1">
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="card shadow" style="background-color: blue;">
+				<div class="add">
+					<h2>Hospitality</h2>
+					<p>lorem ipsum doler amet sit</p>
+					<p>lorem ipsum doler amet</p>
+					<a href="" class="btn btn-outline-light">Apply for a bad</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="card shadow" style="background-color: blue;">
+				<div class="add">
+					<h2>Emergency Care</h2>
+					<p>lorem ipsum doler amet sit</p>
+					<p>lorem ipsum doler amet</p>
+					<a href="" class="btn btn-outline-light"> + 02 30 040 </a>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="card shadow" style="background-color: blue;">
+				<div class="add">
+					<h2>Chamber Service</h2>
+					<p>lorem ipsum doler amet sit</p>
+					<p>lorem ipsum doler amet</p>
+					<a href="" class="btn btn-outline-light"> Make an Appointment </a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="Contentc1">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8">
+				<div class="cele">
+					<h2>Get in Touch</h2>
+					<div class="row">
+						<div class="col">
+							<div class="form-group">
+								<textarea name="" id="" cols="20" rows="6" class="form-control" placeholder="Address">
+								</textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="form-group">
+								<input type="text" placeholder="Enter Your Name" class="form-control">
+							</div>
+						</div>
+						<div class="col">
+							<div class="form-group">
+								<input type="text" placeholder="Enter Your Address" class="form-control">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="form-group">
+								<input type="text" placeholder="Enter Subject" class="form-control">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<input type="submit" value="Send" class="btn btn-outline-info ml-3">
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<span><i class="fa fa-home" style="margin-top: 156px; font-size: 42px;"></i></span>
+				<h4 style="display: inline-block; margin-left: 28px;">Buttonwood, California.</h4>
+				<h6 style=" display: inline-block; margin-left: 72px; margin-bottom: 0px;">Rosemead, CA 91770</h6>
+				<hr style="margin-bottom: 0px;">
+				<span><i class="fa fa-mobile" style="font-size: 42px; display: inline-block; margin-top: 20px;"></i></span>
+				<h6 style=" display: inline-block; margin-left: 52px;">+1 253 565 2365</h6>
+				<h6 style=" display: inline-block; margin-left: 52px; margin-bottom: 0px;">Mon to Fri 9am to 6pm</h6>
+				<hr style="margin-bottom: 0px;">
+				<span><i class="fa fa-mobile" style="font-size: 42px; display: inline-block; margin-top: 20px;"></i></span>
+				<h6 style=" display: inline-block; margin-left: 52px;">support@colorlib.com</h6>
+				<h6 style=" display: inline-block; margin-left: 52px; margin-bottom: 80px;">Send us your query anytime!</h6>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="Content8">
+	<div class="row">
+		<div class="col-sm-5">
+			<div class="img9">
+				<img src="img/logo.png" alt="">
+				<p style="margin-bottom: 0px; margin-top: 30px;">Lorem ipsum dolor sit amet,</p>
+				<p>Lorem ipsum dolor sit amet,</p>
+				<li style="color: white; list-style: none; display: inline-block; font-size: 47px; margin-left: 110px;">
+					<span class="fa fa-facebook-square"></span>
+				</li>
+				<li style="color: white; list-style: none; display: inline-block; font-size: 47px; margin-left: 13px;">
+					<span class="fa fa-twitter-square"></span>
+				</li>
+				<li style="color: white; list-style: none; display: inline-block; font-size: 47px; margin-left: 13px;">
+					<span class="fa fa-instagram"></span>
+				</li>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="titlefooter">
+				<h2>Departments</h2>
+				<a href="" style="text-decoration: none; margin-top: 20px;">Eye Care</a>
+				<a href="" style="text-decoration: none;">Skin Care</a>
+				<a href="" style="text-decoration: none;">Pathology</a>
+				<a href="" style="text-decoration: none;">Medichine</a>
+				<a href="" style="text-decoration: none;">Dental</a>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="titlefooter2">
+				<h2>Useful Links</h2>
+				<a href="" style="text-decoration: none; margin-top: 20px;">About</a>
+				<a href="" style="text-decoration: none;">Blog</a>
+				<a href="" style="text-decoration: none;">About</a>
+				<a href="" style="text-decoration: none;">Content</a>
+				<a href="" style="text-decoration: none;">Apointments</a>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="titlefooter3">
+				<h2>Address</h2>
+				<p>Lakshmipur</p>
+				<p>11 No Word</p>
+				<p>docmed@contact.com</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="Content9">
+	<div class="col-sm-12">
+		<div class="titlefooter4">
+			<p>CopyRight &copy; 2020 Made By Hridoy IT Institute</p>
+		</div>
+	</div>
+</section>
+<!-- :::::::::::::content-end::::::::::: -->
+<script src="js/jquery-3.4.1.js"></script>
+<script src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+<script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+<script>
+		$('.owl-carousel').owlCarousel({
+		center: true,
+		nav: true,
+		loop: true,
+		margin: 3,
+		responsive:{
+		0:{
+		item: 1
+		},
+		600:{
+		item:3
+		},
+		1000:{
+		item:6
+		}
+		}
+		});
+</script>
+</body>
+</html>

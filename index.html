@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Design Project</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+		<link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+		<style>
+		.owl-carousel .owl-nav .owl-prev span{
+		height: 30px;
+		width: 30px;
+		border: 1px solid #ddd;
+		position: absolute;
+		top: -40px;
+		right: 41px;
+		font-size: 21px;
+		}
+		.owl-carousel .owl-nav .owl-next span{
+		height: 30px;
+		width: 30px;
+		border: 1px solid #ddd;
+		position: absolute;
+		top: -40px;
+		right: 0px;
+		font-size: 21px;
+		}
+		</style>
+	</head>
+	<body>
+		<!-- Modal-strat -->
+		<div id="modal-show" class="modal fade" id="Mymodal">
+			<div class="modal-dialog modal-lg">
+				<div  class="modal-content">
+					<div class="modal-header" style="color: blue; margin-left: 220px; font-size: 30px; font-family: sans-serif;">Make An Appointments<a href="" data-dismiss="modal">X</a></div>
+					<div class="modal-body">
+						<form action="" method="">
+							<div class="row">
+								<div class="col">
+									<div class="form-group">
+										<input type="text" id="Pick data" class="form-control" placeholder="Pick data" >
+									</div>
+								</div>
+								<div class="col">
+									<div class="form-group">
+										<input type="text" id="Suitable time" class="form-control" placeholder="Suitable time">
+									</div>
+								</div>
+							</div>
+						</form>
+						<form action="" method="">
+							<div class="row">
+								<div class="col">
+									<div class="form-group">
+										<input type="text" id="Select Departments" class="form-control" placeholder="Select Departments" >
+									</div>
+								</div>
+								<div class="col">
+									<div class="form-group">
+										<input type="text" id="Doctros" class="form-control" placeholder="Doctros" >
+									</div>
+								</div>
+							</div>
+						</form>
+						<form action="" method="">
+							<div class="row">
+								<div class="col">
+									<div class="form-group">
+										<input type="text" id="Name" class="form-control" placeholder="Name" >
+									</div>
+								</div>
+								<div class="col">
+									<div class="form-group">
+										<input type="text" id="Phone No" class="form-control" placeholder="Phone No" >
+									</div>
+								</div>
+							</div>
+						</form>
+						<form action="" method="">
+							<div class="row">
+								<div class="form-group col-sm-12">
+									<input type="text" id="Email" placeholder="Email" class="form-control">
+								</div>
+							</div>
+							<a href="#" class="btn btn-outline-primary btn-block">Confirm</a>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  menu-strat -->
+		<!-- :::::::::::::::::menu-Strat:::::::::::: -->
+		<div class="menu">
+			<div class="row">
+				<div class="col-lg-12">
+					<nav class="navbar navbar-expand-sm">
+						<div class="logo">
+							<img src="img/logo.png" alt="">
+						</div>
+						<button class="btn btn-outline-primary navbar-toggler" data-target="#mymenu" data-toggle="collapse">
+						<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="mymenu">
+							<ul class="nav navbar" class="navbar">
+								<li><a href="index.html" class="nav-link">Home</a></li>
+								<li><a href="department.html" class="nav-link">Department</a></li>
+								<li class="dropdown"><a href="blog.html" data-target="#mydropdown" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
+								<ul class="dropdown-menu" aria-labelledby="mydropdown">
+									<li><a href="blog.html" class="nav-link">Blog</a></li>
+									<li><a href="single.html" class="nav-link">Single-Blog</a></li>
+								</ul>
+							</li>
+							<li class="dropdown"><a href="page.html" data-target="mrdropdown" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+							<ul class="dropdown-menu" aria-labelledby="mrdropdown">
+								<li><a href="element.html" class="nav-link">Elemants</a></li>
+								<li><a href="about.html" class="nav-link">About</a></li>
+							</ul>
+						</li>
+						<li><a href="doctor.html" class="nav-link">Doctor</a></li>
+						<li><a href="contect.html" class="nav-link">Contect Us</a></li>
+					</ul>
+				</div>
+				<a id="modal-btn" href="#" class="btn btn-outline-primary" class="btn">Make an Appointment</a>
+			</nav>
+		</div>
+	</div>
+</div>
+<!-- :::::::::::::::::menu-End:::::::::::: -->
+<!-- :::::::::::slider-strat:::::::::::::: -->
+<section id="slider">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="carousel slide" data-ride="carousel" setintercal="1000">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="img/banner2.png" alt="" class="img">
+						<div class="carousel-caption">
+							<div class="likha">
+								<h1>Health Care</h1>
+								<h2>For Hole Family</h2>
+								<p style="margin-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+								<p style="margin-bottom: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+								<a href="" class="btn btn-outline-primary">Check Our Service</a>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="img/banner.png" alt="" class="img">
+						<div class="carousel-caption">
+							<div class="likha">
+								<h1>Health Care</h1>
+								<h2>For Hole Family</h2>
+								<p style="margin-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+								<p style="margin-bottom: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+								<a href="" class="btn btn-outline-primary">Check Our Service</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- :::::::::::slider-end:::::::::::::: -->
+<!-- :::::::::::::content-strat::::::::: -->
+<section id="content1">
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="card shadow" style="background-color: blue;">
+				<div class="add">
+					<h2>Hospitality</h2>
+					<p>lorem ipsum doler amet sit</p>
+					<p>lorem ipsum doler amet</p>
+					<a href="" class="btn btn-outline-light">Apply for a bad</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="card shadow" style="background-color: blue;">
+				<div class="add">
+					<h2>Emergency Care</h2>
+					<p>lorem ipsum doler amet sit</p>
+					<p>lorem ipsum doler amet</p>
+					<a href="" class="btn btn-outline-light"> + 02 30 040 </a>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="card shadow" style="background-color: blue;">
+				<div class="add">
+					<h2>Chamber Service</h2>
+					<p>lorem ipsum doler amet sit</p>
+					<p>lorem ipsum doler amet</p>
+					<a href="" class="btn btn-outline-light"> Make an Appointment </a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="Contect2">
+	<div class="row">
+		<div class="col-sm-5">
+			<img src="img/a.png" alt="" class="conimg">
+		</div>
+		<div class="col-sm-7">
+			<div class="conlik">
+				<h4>Well Come To Docmed</h4>
+				<hr>
+				<h1>Best Care For Your Good Health</h1>
+				<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</h5>
+				<p style="margin-top: 20px;">lorem Ipsum doler amet sit</p>
+				<p>lorem Ipsum doler amet sit</p>
+				<p>lorem Ipsum doler amet sit</p>
+				<a href="" class="btn btn-outline-primary">Learn More</a>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="Contect3">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="con1lik">
+					<h1>Our Departments</h1>
+					<hr>
+					<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</h5>
+					<p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				<div class="row" style="margin-top: 60px;">
+					<div class="col-sm-4">
+						<div class="card shadow-lg">
+							<div class="img2">
+								<img src="img/1.png" alt="">
+							</div>
+							<div class="card-body">
+								<h4>Eye Care</h4>
+								<p style="color: gray;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								<a href="" class="btn btn-outline-primary">Learn More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="card shadow-lg">
+							<div class="img2">
+								<img src="img/2.png" alt="">
+							</div>
+							<div class="card-body">
+								<h4>Physical Therapy</h4>
+								<p style="color: gray;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								<a href="" class="btn btn-outline-primary">Learn More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="card shadow-lg">
+							<div class="img2">
+								<img src="img/3.png" alt="">
+							</div>
+							<div class="card-body">
+								<h4>Dental Care</h4>
+								<p style="color: gray;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								<a href="" class="btn btn-outline-primary">Learn More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4" style="margin-top: 40px;">
+						<div class="card shadow-lg">
+							<div class="img2">
+								<img src="img/4.png" alt="">
+							</div>
+							<div class="card-body">
+								<h4>Diagnostic Test</h4>
+								<p style="color: gray;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								<a href="" class="btn btn-outline-primary">Learn More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4" style="margin-top: 40px;">
+						<div class="card shadow-lg">
+							<div class="img2">
+								<img src="img/5.png" alt="">
+							</div>
+							<div class="card-body">
+								<h4>Skin Surgery</h4>
+								<p style="color: gray;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								<a href="" class="btn btn-outline-primary">Learn More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4" style="margin-top: 40px;">
+						<div class="card shadow-lg">
+							<div class="img2">
+								<img src="img/6.png" alt="">
+							</div>
+							<div class="card-body">
+								<h4>Surgery Service</h4>
+								<p style="color: gray;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								<a href="" class="btn btn-outline-primary">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="Contect4">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="carousel slide" id="mysilde" data-ride="carousel" setintercal="1000">
+				<ol class="carousel-indicators">
+					<li data-target="#mysilde" data-slide-to="0"></li>
+					<li data-target="#mysilde" data-slide-to="1"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="carousel2">
+							<img src="img/testmonial/1.png" alt="">
+						</div>
+						<div class="carousel-caption">
+							<div class="carousel21">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+								<h5>ASANA KORIM</h5>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="carousel2">
+							<img src="img/testmonial/2.png" alt="">
+						</div>
+						<div class="carousel-caption">
+							<div class="carousel21">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+								<h5>ASANA KORIM</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#mysilde" class="carousel-control-prev" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a href="#mysilde" class="carousel-control-next" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="Contect5">
+	<div class="row">
+		<div class="col-sm-12">
+			<ul class="nav nav-tabs" style="background-color: #eee;">
+				<li class="nav-item"><a href="#Excellent Service" class="nav-link active" data-toggle="tab" style="font-size: 40px;">Excellent Service</a></li>
+				<li class="nav-item"><a href="#Qualified Doctors" class="nav-link" data-toggle="tab" style="font-size: 40px;">Qualified Doctors</a></li>
+				<li class="nav-item"><a href="#Emergency Departments" class="nav-link" data-toggle="tab" style="font-size: 40px;">Emergency Departments</a></li>
+			</ul>
+			<div class="tab-content">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="tab-pane active" id="Excellent Service">
+							<div class="tab-likha">
+								<h2>Leading edge care for your family</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="tab-pane active" id="Excellent Service">
+							<div class="tabImg">
+								<img src="img/business.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="Contect6">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="owl-carousel">
+					<div class="card">
+						<div class="owl-img">
+							<img src="img/experts/9.png" alt="">
+						</div>
+						<div class="card-body">
+							<a href="" class="btn btn-primary">Add Friend</a>
+							<a href="" class="btn btn-light mt-2">Remove</a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="owl-img">
+							<img src="img/experts/8.png" alt="">
+						</div>
+						<div class="card-body">
+							<a href="" class="btn btn-primary">Add Friend</a>
+							<a href="" class="btn btn-light mt-2">Remove</a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="owl-img">
+							<img src="img/experts/7.png" alt="">
+						</div>
+						<div class="card-body">
+							<a href="" class="btn btn-primary">Add Friend</a>
+							<a href="" class="btn btn-light mt-2">Remove</a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="owl-img">
+							<img src="img/experts/6.png" alt="">
+						</div>
+						<div class="card-body">
+							<a href="" class="btn btn-primary">Add Friend</a>
+							<a href="" class="btn btn-light mt-2">Remove</a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="owl-img">
+							<img src="img/experts/1.png" alt="">
+						</div>
+						<div class="card-body">
+							<a href="" class="btn btn-primary">Add Friend</a>
+							<a href="" class="btn btn-light mt-2">Remove</a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="owl-img">
+							<img src="img/experts/4.png" alt="">
+						</div>
+						<div class="card-body">
+							<a href="" class="btn btn-primary">Add Friend</a>
+							<a href="" class="btn btn-light mt-2">Remove</a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="owl-img">
+							<img src="img/experts/3.png" alt="">
+						</div>
+						<div class="card-body">
+							<a href="" class="btn btn-primary">Add Friend</a>
+							<a href="" class="btn btn-light mt-2">Remove</a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="owl-img">
+							<img src="img/experts/2.png" alt="">
+						</div>
+						<div class="card-body">
+							<a href="" class="btn btn-primary">Add Friend</a>
+							<a href="" class="btn btn-light mt-2">Remove</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="Content7">
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="img7">
+				<img src="img/emergency-1.png" alt="">
+				<div class="carousel-caption">
+					<h2>For Any Emergency Contect</h2>
+					<h5>lorem ipsum doler sit amet</h5>
+					<a href="" class="btn btn-outline-light mr-5"> + 378 473 476 </a>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<div class="img8">
+				<img src="img/emergency-2.png" alt="">
+				<div class="carousel-caption">
+					<h2>For Any Emergency Contect</h2>
+					<h5>lorem ipsum doler sit amet</h5>
+					<a href="" class="btn btn-outline-light mr-5"> Make An Appointment </a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="Content8">
+	<div class="row">
+		<div class="col-sm-5">
+			<div class="img9">
+				<img src="img/logo.png" alt="">
+				<p style="margin-bottom: 0px; margin-top: 30px;">Lorem ipsum dolor sit amet,</p>
+				<p>Lorem ipsum dolor sit amet,</p>
+				<li style="color: white; list-style: none; display: inline-block; font-size: 47px; margin-left: 110px;">
+					<span class="fa fa-facebook-square"></span>
+				</li>
+				<li style="color: white; list-style: none; display: inline-block; font-size: 47px; margin-left: 13px;">
+					<span class="fa fa-twitter-square"></span>
+				</li>
+				<li style="color: white; list-style: none; display: inline-block; font-size: 47px; margin-left: 13px;">
+					<span class="fa fa-instagram"></span>
+				</li>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="titlefooter">
+				<h2>Departments</h2>
+				<a href="" style="text-decoration: none; margin-top: 20px;">Eye Care</a>
+				<a href="" style="text-decoration: none;">Skin Care</a>
+				<a href="" style="text-decoration: none;">Pathology</a>
+				<a href="" style="text-decoration: none;">Medichine</a>
+				<a href="" style="text-decoration: none;">Dental</a>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="titlefooter2">
+				<h2>Useful Links</h2>
+				<a href="" style="text-decoration: none; margin-top: 20px;">About</a>
+				<a href="" style="text-decoration: none;">Blog</a>
+				<a href="" style="text-decoration: none;">About</a>
+				<a href="" style="text-decoration: none;">Content</a>
+				<a href="" style="text-decoration: none;">Apointments</a>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="titlefooter3">
+				<h2>Address</h2>
+				<p>Lakshmipur</p>
+				<p>11 No Word</p>
+				<p>docmed@contact.com</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="Content9">
+	<div class="col-sm-12">
+		<div class="titlefooter4">
+			<p>CopyRight &copy; 2020 Made By Hridoy IT Institute</p>
+		</div>
+	</div>
+</section>
+<!-- :::::::::::::content-end::::::::::: -->
+<script src="js/jquery-3.4.1.js"></script>
+<script src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+<script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+<script>
+		$('.owl-carousel').owlCarousel({
+		center: true,
+		nav: true,
+		loop: true,
+		margin: 3,
+		responsive:{
+		0:{
+		item: 1
+		},
+		600:{
+		item:3
+		},
+		1000:{
+		item:6
+		}
+		}
+		});
+</script>
+</body>
+</html>

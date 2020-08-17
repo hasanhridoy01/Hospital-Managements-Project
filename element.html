@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Design Project</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+		<link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+		<style>
+		.owl-carousel .owl-nav .owl-prev span{
+		height: 30px;
+		width: 30px;
+		border: 1px solid #ddd;
+		position: absolute;
+		top: -40px;
+		right: 41px;
+		font-size: 21px;
+		}
+		.owl-carousel .owl-nav .owl-next span{
+		height: 30px;
+		width: 30px;
+		border: 1px solid #ddd;
+		position: absolute;
+		top: -40px;
+		right: 0px;
+		font-size: 21px;
+		}
+		</style>
+	</head>
+	<body>
+		<!-- Modal-strat -->
+		<div id="modal-show" class="modal fade" id="Mymodal">
+			<div class="modal-dialog modal-lg">
+				<div  class="modal-content">
+					<div class="modal-header" style="color: blue; margin-left: 220px; font-size: 30px; font-family: sans-serif;">Make An Appointments<a href="" data-dismiss="modal">X</a></div>
+					<div class="modal-body">
+						<form action="" method="">
+							<div class="row">
+								<div class="col">
+									<div class="form-group">
+										<input type="text" id="Pick data" class="form-control" placeholder="Pick data" >
+									</div>
+								</div>
+								<div class="col">
+									<div class="form-group">
+										<input type="text" id="Suitable time" class="form-control" placeholder="Suitable time">
+									</div>
+								</div>
+							</div>
+						</form>
+						<form action="" method="">
+							<div class="row">
+								<div class="col">
+									<div class="form-group">
+										<input type="text" id="Select Departments" class="form-control" placeholder="Select Departments" >
+									</div>
+								</div>
+								<div class="col">
+									<div class="form-group">
+										<input type="text" id="Doctros" class="form-control" placeholder="Doctros" >
+									</div>
+								</div>
+							</div>
+						</form>
+						<form action="" method="">
+							<div class="row">
+								<div class="col">
+									<div class="form-group">
+										<input type="text" id="Name" class="form-control" placeholder="Name" >
+									</div>
+								</div>
+								<div class="col">
+									<div class="form-group">
+										<input type="text" id="Phone No" class="form-control" placeholder="Phone No" >
+									</div>
+								</div>
+							</div>
+						</form>
+						<form action="" method="">
+							<div class="row">
+								<div class="form-group col-sm-12">
+									<input type="text" id="Email" placeholder="Email" class="form-control">
+								</div>
+							</div>
+							<a href="#" class="btn btn-outline-primary btn-block">Confirm</a>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  menu-strat -->
+		<!-- :::::::::::::::::menu-Strat:::::::::::: -->
+		<div class="menu">
+			<div class="row">
+				<div class="col-lg-12">
+					<nav class="navbar navbar-expand-sm">
+						<div class="logo">
+							<img src="img/logo.png" alt="">
+						</div>
+						<button class="btn btn-outline-primary navbar-toggler" data-target="#mymenu" data-toggle="collapse">
+						<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="mymenu">
+							<ul class="nav navbar" class="navbar">
+								<li><a href="index.html" class="nav-link">Home</a></li>
+								<li><a href="department.html" class="nav-link">Department</a></li>
+								<li class="dropdown"><a href="blog.html" data-target="#mydropdown" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
+								<ul class="dropdown-menu" aria-labelledby="mydropdown">
+									<li><a href="blog.html" class="nav-link">Blog</a></li>
+									<li><a href="single.html" class="nav-link">Single-Blog</a></li>
+								</ul>
+							</li>
+							<li class="dropdown"><a href="page.html" data-target="mrdropdown" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+							<ul class="dropdown-menu" aria-labelledby="mrdropdown">
+								<li><a href="element.html" class="nav-link">Elemants</a></li>
+								<li><a href="about.html" class="nav-link">About</a></li>
+							</ul>
+						</li>
+						<li><a href="doctor.html" class="nav-link">Doctor</a></li>
+						<li><a href="contect.html" class="nav-link">Contect Us</a></li>
+					</ul>
+				</div>
+				<a id="modal-btn" href="#" class="btn btn-outline-primary" class="btn">Make an Appointment</a>
+			</nav>
+		</div>
+	</div>
+</div>
+<!-- :::::::::::::::::menu-End:::::::::::: -->
+<!-- :::::::::::slider-strat:::::::::::::: -->
+<section id="slider">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="carousel slide" data-ride="carousel" setintercal="1000">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="img/banner2.png" alt="" class="img">
+						<div class="carousel-caption">
+							<div class="likha">
+								<h1>Health Care</h1>
+								<h2>For Hole Family</h2>
+								<p style="margin-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+								<p style="margin-bottom: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+								<a href="" class="btn btn-outline-primary">Check Our Service</a>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="img/banner.png" alt="" class="img">
+						<div class="carousel-caption">
+							<div class="likha">
+								<h1>Health Care</h1>
+								<h2>For Hole Family</h2>
+								<p style="margin-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+								<p style="margin-bottom: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+								<a href="" class="btn btn-outline-primary">Check Our Service</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- :::::::::::slider-end:::::::::::::: -->
+<!-- :::::::::::::content-strat::::::::: -->
+<section id="Contente1">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="element1">
+					<h1>Text Sample</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur <i style="color: orange;">adipisicing</i> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla <i style="color: orange;">pariatur</i>. Excepteur sint occaecat cupidatat non <i style="color: orange;">proident</i>, sunt in culpa qui officia <b style="color: orange;">deserunt</b> mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <i style="color: orange;">exercitation</i> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in consectetur reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat <i style="color: orange;">cupidatat</i> non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="element2">
+					<h1>Simple Buttons</h1>
+					<div class="col-sm-12">
+						<button class="btn btn-light ml-4">Default</button>
+						<button class="btn btn-primary">Primary</button>
+						<button class="btn btn-secondary">Secondary</button>
+						<button class="btn btn-success">Success</button>
+						<button class="btn btn-info">Info</button>
+						<button class="btn btn-warning">Warning</button>
+						<button class="btn btn-danger">Danger</button>
+						<button class="btn btn-dark">Dark</button>
+						<button class="btn btn-light">Light</button>
+					</div>
+					<div class="col-sm-12">
+						<button class="btn btn-light ml-4">Default</button>
+						<button class="btn btn-outline-primary">Primary</button>
+						<button class="btn btn-outline-secondary">Secondary</button>
+						<button class="btn btn-outline-success">Success</button>
+						<button class="btn btn-outline-info">Info</button>
+						<button class="btn btn-outline-warning">Warning</button>
+						<button class="btn btn-outline-danger">Danger</button>
+						<button class="btn btn-outline-dark">Dark</button>
+						<button class="btn btn-outline-light">Light</button>
+					</div>
+					<div class="col-sm-12">
+						<button class="btn btn-light ml-4">Default</button>
+						<button class="btn btn-primary">Primary</button>
+						<button class="btn btn-secondary">Secondary</button>
+						<button class="btn btn-success">Success</button>
+						<button class="btn btn-info">Info</button>
+						<button class="btn btn-warning">Warning</button>
+						<button class="btn btn-danger">Danger</button>
+						<button class="btn btn-dark">Dark</button>
+						<button class="btn btn-light">Light</button>
+					</div>
+					<div class="col-sm-12">
+						<button class="btn btn-light ml-4">Default</button>
+						<button class="btn btn-outline-primary">Primary</button>
+						<button class="btn btn-outline-secondary">Secondary</button>
+						<button class="btn btn-outline-success">Success</button>
+						<button class="btn btn-outline-info">Info</button>
+						<button class="btn btn-outline-warning">Warning</button>
+						<button class="btn btn-outline-danger">Danger</button>
+						<button class="btn btn-outline-dark">Dark</button>
+						<button class="btn btn-outline-light">Light</button>
+					</div>
+					<div class="col-sm-12">
+						<button class="btn btn-light ml-4">Default</button>
+						<button class="btn btn-primary">Primary</button>
+						<button class="btn btn-secondary">Secondary</button>
+						<button class="btn btn-success">Success</button>
+						<button class="btn btn-info">Info</button>
+						<button class="btn btn-warning">Warning</button>
+						<button class="btn btn-danger">Danger</button>
+						<button class="btn btn-dark">Dark</button>
+						<button class="btn btn-light">Light</button>
+					</div>
+					<div class="col-sm-12">
+						<button class="btn btn-light ml-4">Default</button>
+						<button class="btn btn-outline-primary">Primary</button>
+						<button class="btn btn-outline-secondary">Secondary</button>
+						<button class="btn btn-outline-success">Success</button>
+						<button class="btn btn-outline-info">Info</button>
+						<button class="btn btn-outline-warning">Warning</button>
+						<button class="btn btn-outline-danger">Danger</button>
+						<button class="btn btn-outline-dark">Dark</button>
+						<button class="btn btn-outline-light">Light</button>
+					</div>
+					<div class="col-sm-12">
+						<button class="btn btn-light ml-4">Default</button>
+						<button class="btn btn-primary">Primary</button>
+						<button class="btn btn-secondary">Secondary</button>
+						<button class="btn btn-success">Success</button>
+						<button class="btn btn-info">Info</button>
+						<button class="btn btn-warning">Warning</button>
+						<button class="btn btn-danger">Danger</button>
+						<button class="btn btn-dark">Dark</button>
+						<button class="btn btn-light">Light</button>
+					</div>
+					<div class="col-sm-12">
+						<button class="btn btn-light ml-4">Default</button>
+						<button class="btn btn-outline-primary">Primary</button>
+						<button class="btn btn-outline-secondary">Secondary</button>
+						<button class="btn btn-outline-success">Success</button>
+						<button class="btn btn-outline-info">Info</button>
+						<button class="btn btn-outline-warning">Warning</button>
+						<button class="btn btn-outline-danger">Danger</button>
+						<button class="btn btn-outline-dark">Dark</button>
+						<button class="btn btn-outline-light">Light</button>
+					</div>
+				</div>
+				<hr>
+				<div class="element3">
+					<h2>Left Aligned</h2>
+					<div class="row">
+						<div class="col-sm-4">
+							<img src="img/Elament/g7.jpg" alt="">
+						</div>
+						<div class="col-sm-8">
+							<p>Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system. As a result of this law, most of the popular online casino networks such as Party Gaming and PlayTech left the United States. Overnight, online casino players found themselves being chased by the Federal government. But, after a fortnight, the online casino industry came up with a solution and new online casinos started taking root. These began to operate under a different business umbrella, and by doing that, rendered the transfer of money to and from them legal. A major part of this was enlisting electronic banking systems that would accept this new clarification and start doing business with me. Listed in this article are the electronic banking systems that accept players from the United States that wish to play in online casinos.</p>
+						</div>
+					</div>
+				</div>
+				<div class="element4">
+					<div class="row">
+						<div class="col-sm-8">
+							<p>Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system. As a result of this law, most of the popular online casino networks such as Party Gaming and PlayTech left the United States. Overnight, online casino players found themselves being chased by the Federal government. But, after a fortnight, the online casino industry came up with a solution and new online casinos started taking root. These began to operate under a different business umbrella, and by doing that, rendered the transfer of money to and from them legal. A major part of this was enlisting electronic banking systems that would accept this new clarification and start doing business with me. Listed in this article are the electronic banking systems that accept players from the United States that wish to play in online casinos.</p>
+						</div>
+						<div class="col-sm-4">
+							<h2>Right Aligned</h2>
+							<img src="img/Elament/g7.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="element5">
+					<div class="row">
+						<div class="col-sm-3">
+							<h2>Definition</h2>
+						</div>
+						<div class="col-sm-3">
+							<h4>Definition 01</h4>
+							<p>Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system. As a result of this law, most of the popular online casino networks</p>
+						</div>
+						<div class="col-sm-3">
+							<h4>Definition 01</h4>
+							<p>Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system. As a result of this law, most of the popular online casino networks</p>
+						</div>
+						<div class="col-sm-3">
+							<h4>Definition 01</h4>
+							<p>Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system. As a result of this law, most of the popular online casino networks</p>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="element6">
+					<h2>Block Quotes</h2>
+					<div class="card-body" style="background-color: #eee;">
+						<p>Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system. As a result of this law, most of the popular online casino networks such as Party Gaming and PlayTech left the United States. Overnight, online casino players found themselves being chased by the Federal government. But, after a fortnight, the online casino industry came up with a solution and new online casinos started taking root. These began to operate under a different business umbrella, and by doing that, rendered the transfer of money to and from them legal. A major part of this was enlisting electronic banking systems that would accept this new clarification and start doing business with me. Listed in this article are the electronic banking”</p>
+					</div>
+				</div>
+				<hr>
+				<div class="element7">
+					<h2>Table</h2>
+					<table class="table  table-info">
+						<thead>
+							<th>#</th>
+							<th>COUNTRIES</th>
+							<th>VISITS</th>
+							<th>PERCENTAGES</th>
+						</thead>
+						<tr>
+							<td>01</td>
+							<td>Canada</td>
+							<td>645032</td>
+							<td><hr style="background-color: blue; padding: 2px;"></td>
+						</tr>
+						<tr>
+							<td>02</td>
+							<td>Canada</td>
+							<td>645032</td>
+							<td><hr style="background-color: green; padding: 2px;"></td>
+						</tr>
+						<tr>
+							<td>03</td>
+							<td>Canada</td>
+							<td>645032</td>
+							<td><hr style="background-color: blue; padding: 2px; width: 50%"></td>
+						</tr>
+						<tr>
+							<td>04</td>
+							<td>Canada</td>
+							<td>645032</td>
+							<td><hr style="background-color: red; padding: 2px;"></td>
+						</tr>
+						<tr>
+							<td>05</td>
+							<td>Canada</td>
+							<td>645032</td>
+							<td><hr style="background-color: yellow; padding: 2px;"></td>
+						</tr>
+						<tr>
+							<td>06</td>
+							<td>Canada</td>
+							<td>645032</td>
+							<td><hr style="background-color: blue; padding: 2px;"></td>
+						</tr>
+						<tr>
+							<td>07</td>
+							<td>Canada</td>
+							<td>645032</td>
+							<td><hr style="background-color: gray; padding: 2px; width: 50%"></td>
+						</tr>
+						<tr>
+							<td>08</td>
+							<td>Canada</td>
+							<td>645032</td>
+							<td><hr style="background-color: blue; padding: 2px;"></td>
+						</tr>
+					</table>
+				</div>
+				<hr>
+				<div class="element8">
+					<div class="card-colmuns">
+						<h2>Image Gallery</h2>
+						<img src="img/Elament/g1.jpg" alt="">
+						<img src="img/Elament/g2.jpg" alt="">
+						<img src="img/Elament/g3.jpg" alt="">
+						<img src="img/Elament/g4.jpg" alt="">
+						<img src="img/Elament/g5.jpg" alt="">
+					</div>
+				</div>
+				<hr>
+				<div class="element9">
+					<div class="row">
+						<div class="col-sm-4">
+							<h2 style="margin-top: 34px;">Image Gallery</h2>
+							<h1 style="color: gray;">This is header 01</h1>
+							<h2 style="color: gray;">This is header 01</h2>
+							<h3 style="color: gray;">This is header 01</h3>
+							<h4 style="color: gray;">This is header 01</h4>
+							<h5 style="color: gray;">This is header 01</h5>
+							<h6 style="color: gray;">This is header 01</h6>
+						</div>
+						<div class="col-sm-4">
+							<h3 style="margin-top: 34px;">Unordered List</h3>
+							<p>Fta Keys</p>
+							<p>For Women Only Your Computer Usage</p>
+							<p>Facts Why Inkjet Printing Is Very Appealing</p>
+							<p style="margin-left: 20px;">Addiction When Gambling Becomes</p>
+							<p style="margin-left: 20px;">Protective Preventative Maintenance</p>
+							<p>Dealing With Technical Support 10 Useful Tips</p>
+							<p>Make Myspace Your Best Designed Space</p>
+							<p>Cleaning And Organizing Your Computer</p>
+						</div>
+						<div class="col-sm-4">
+							<h3 style="margin-top: 34px;">Ordered List</h3>
+							<p>01Fta Keys</p>
+							<p>02For Women Only Your Computer Usage</p>
+							<p>03Facts Why Inkjet Printing Is Very Appealing</p>
+							<p style="margin-left: 20px;">04Addiction When Gambling Becomes</p>
+							<p style="margin-left: 20px;">05Protective Preventative Maintenance</p>
+							<p>06Dealing With Technical Support 10 Useful Tips</p>
+							<p>07Make Myspace Your Best Designed Space</p>
+							<p>08Cleaning And Organizing Your Computer</p>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="element10">
+					<div class="row">
+						<div class="col-sm-8">
+							<h2>Form Element</h2>
+							<a style="text-decoration: none;" href="" class="alert alert-info btn-block">First Name</a>
+							<a style="text-decoration: none;" href="" class="alert alert-info btn-block">Last Name</a>
+							<a style="text-decoration: none;" href="" class="alert alert-info btn-block">E_mail Address</a>
+							<a style="text-decoration: none;" href="" class="alert alert-info btn-block">Address</a>
+							<a style="text-decoration: none;" href="" class="alert alert-info btn-block">City</a>
+							<a style="text-decoration: none;" href="" class="alert alert-info btn-block">Country</a>
+							<textarea name="" id="" cols="96" rows="4" class="alert alert-info" placeholder="Message"></textarea>
+							<a style="text-decoration: none;" href="" class="alert alert-primary btn-block">Primary Color</a>
+							<a style="text-decoration: none;" href="" class="alert alert-success btn-block">Accent Color</a>
+							<a style="text-decoration: none;" href="" class="alert alert-secondary btn-block">Secondary Color</a>
+						</div>
+						<div class="col-sm-4">
+							<div class="element11">
+								<h1>Switches</h1>
+								<p>01. Sample Switch</p>
+								<p>02. Primary Color Switch</p>
+								<p>03. Confirm Color Switch</p>
+								<h2 style="margin-top: 0px;">Selectboxes</h2>
+								<select name="" id="" class="form-control">
+									<option value="">English</option>
+									<option value="">Bangli</option>
+									<option value="">Arabic</option>
+									<option value="">Hindi</option>
+								</select>
+								<h2 style="margin-top: 15px;">Checkboxes</h2>
+								<p>01. Sample Checkbox</p>
+								<p>02. Primary Color Checkbox</p>
+								<p>03. Confirm Color Checkbox</p>
+								<p>04. Disabled Checkbox</p>
+								<p>05. Disabled Checkbox active</p>
+								<h2>Radios</h2>
+								<p>01. Sample radio</p>
+								<p>02. Primary Color radio</p>
+								<p>03. Confirm Color radio</p>
+								<p>04. Disabled radio</p>
+								<p>05. Disabled radio active</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="Content8">
+	<div class="row">
+		<div class="col-sm-5">
+			<div class="img9">
+				<img src="img/logo.png" alt="">
+				<p style="margin-bottom: 0px; margin-top: 30px;">Lorem ipsum dolor sit amet,</p>
+				<p>Lorem ipsum dolor sit amet,</p>
+				<li style="color: white; list-style: none; display: inline-block; font-size: 47px; margin-left: 110px;">
+					<span class="fa fa-facebook-square"></span>
+				</li>
+				<li style="color: white; list-style: none; display: inline-block; font-size: 47px; margin-left: 13px;">
+					<span class="fa fa-twitter-square"></span>
+				</li>
+				<li style="color: white; list-style: none; display: inline-block; font-size: 47px; margin-left: 13px;">
+					<span class="fa fa-instagram"></span>
+				</li>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="titlefooter">
+				<h2>Departments</h2>
+				<a href="" style="text-decoration: none; margin-top: 20px;">Eye Care</a>
+				<a href="" style="text-decoration: none;">Skin Care</a>
+				<a href="" style="text-decoration: none;">Pathology</a>
+				<a href="" style="text-decoration: none;">Medichine</a>
+				<a href="" style="text-decoration: none;">Dental</a>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="titlefooter2">
+				<h2>Useful Links</h2>
+				<a href="" style="text-decoration: none; margin-top: 20px;">About</a>
+				<a href="" style="text-decoration: none;">Blog</a>
+				<a href="" style="text-decoration: none;">About</a>
+				<a href="" style="text-decoration: none;">Content</a>
+				<a href="" style="text-decoration: none;">Apointments</a>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="titlefooter3">
+				<h2>Address</h2>
+				<p>Lakshmipur</p>
+				<p>11 No Word</p>
+				<p>docmed@contact.com</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="Content9">
+	<div class="col-sm-12">
+		<div class="titlefooter4">
+			<p>CopyRight &copy; 2020 Made By Hridoy IT Institute</p>
+		</div>
+	</div>
+</section>
+<!-- :::::::::::::content-end::::::::::: -->
+<script src="js/jquery-3.4.1.js"></script>
+<script src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+<script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+<script>
+		$('.owl-carousel').owlCarousel({
+		center: true,
+		nav: true,
+		loop: true,
+		margin: 3,
+		responsive:{
+		0:{
+		item: 1
+		},
+		600:{
+		item:3
+		},
+		1000:{
+		item:6
+		}
+		}
+		});
+</script>
+</body>
+</html>
